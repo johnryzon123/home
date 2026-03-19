@@ -1,35 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RyzDev - Home</title>
-    <!link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RyzDev | Systems Engineering</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
+      <h1>RyzDev: System & Language Engineering</h1>
+      <div class="sys-status">
+        [OK] RyzOS Kernel v0.1 | [OK] Ry2 VM Register-Core | [OK] LibC Loaded
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#kernel">RyzOS</a></li>
+          <li><a href="#vm">Ry2 VM</a></li>
+          <li>
+            <a href="https://github.com/johnryzon123" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section>
-            <h2>About This Page</h2>
-            <p>This is the main website for my Projects.</p>
-        </section>
+      <section>
+        <h2>The Architecture</h2>
+        <p>
+          A vertical stack built from the silicon up. From a custom 32-bit x86
+          Kernel to a high-performance Register-based Virtual Machine.
+        </p>
+      </section>
+
+      <div class="project-grid">
+        <div class="card" id="kernel">
+          <h3><i class="fas fa-microchip"></i> RyzOS Kernel</h3>
+          <p>
+            An i386 hobbyist kernel featuring
+            <strong>Ring 3</strong> transition...
+          </p>
+        </div>
+
+        <div class="card" id="vm">
+          <h3><i class="fas fa-terminal"></i> Ry2 VM</h3>
+          <p>
+            Successor to Ry1. A register-based architecture optimized for
+            speed...
+          </p>
+        </div>
+
+        <div class="card" id="libc">
+          <h3>LibRyz (LibC)</h3>
+          <p>
+            A freestanding C Standard Library implementation. Featuring
+            <code>printf</code>, <code>fopen</code>, and <code>malloc</code> via
+            <code>int 0x80</code> syscalls.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Name</p>
+      <p>&copy; 2026 Johnryzon Z. Abejero | Built for Performance</p>
     </footer>
-
-    <!script src="script.js"><!/script> <!Future Script>
-</body>
+  </body>
 </html>
